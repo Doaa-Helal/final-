@@ -4,10 +4,9 @@ const app = express();
 app.use(express.json());
 
 const PORT = 3000;
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-  });
-
+app.listen(port, '0.0.0.0', () => {
+    console.log(`Server running at http://0.0.0.0:${port}`);
+});
 
 let products = [
   { id: 1, name: 'Product 1', price: 100 },
